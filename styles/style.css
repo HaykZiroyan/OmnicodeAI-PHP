@@ -1,0 +1,49 @@
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.container .hidden {
+  display: none;
+}
+.container .commentForm textarea {
+  width: 100%;
+}
+.container .commentForm .submitBtn {
+  float: right;
+}
+.container .commentList .comments {
+  float: inline-end;
+  margin: 70px auto;
+}
+.container .commentList .comments .text {
+  display: flex;
+  justify-content: end;
+}
+.container .commentList .comments .shortInfo {
+  float: inline-end;
+}
+.container .commentList .comments .shortInfo .btn {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
+.container .commentList .comments .shortInfo .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.container .commentList .comments .shortInfo .dropdown .dropdown-content {
+  display: none;
+  margin-left: -425px;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.container .commentList .comments .shortInfo .dropdown .dropdown-content .subComment {
+  width: 100%;
+}
+.container .commentList .comments .shortInfo .dropdown:hover .dropdown-content {
+  display: block;
+}

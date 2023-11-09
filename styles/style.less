@@ -1,0 +1,55 @@
+.container {
+  width: 95%;
+  margin: 0 auto;
+  .hidden {
+    display: none;
+  }
+  .commentForm {
+    textarea {
+      width: 100%;
+    }
+    .submitBtn {
+      float: right;
+    }
+  }
+  .commentList {
+    
+    .comments {
+      float: inline-end;
+      margin: 70px auto;
+
+      .text {
+        display: flex;
+        justify-content: end;
+      }
+      .shortInfo {
+        float: inline-end;
+        .btn {
+          border: 1px solid;
+          padding: 10px;
+          box-shadow: 5px 10px;
+        }
+        .dropdown {
+          position: relative;
+          display: inline-block;
+          .dropdown-content {
+            display: none;
+            margin-left: -425px;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 500px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            .subComment {
+              width: 100%;
+            }
+          }
+        }
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+      }
+    }
+  }
+}
